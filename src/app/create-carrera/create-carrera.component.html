@@ -1,0 +1,16 @@
+<h2>Agregar Carrera</h2>
+<form (submit)="agregarCarrera()">
+  <label>
+    Codigo:
+    <input [(ngModel)]="carrera.codigo" name="codigo">
+  </label>
+  <label>
+    Nombre:
+    <input [(ngModel)]="carrera.nombre" name="nombre">
+  </label>
+  <label>
+    Ciclos:
+    <input [(ngModel)]="carrera.ciclos" name="ciclos">
+  </label>
+  <button type="submit">Agregar</button>
+</form>

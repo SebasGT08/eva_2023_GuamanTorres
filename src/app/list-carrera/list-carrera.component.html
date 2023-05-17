@@ -1,0 +1,9 @@
+<h2>Listado de Carreras</h2>
+<ul>
+  <li *ngFor="let carrera of carreras">
+    <p><strong>Codigo:</strong> {{carrera.codigo}}</p>
+    <p><strong>Nombre:</strong> {{carrera.nombre}}</p>
+    <p><strong>Ciclos:</strong> {{carrera.ciclos}}</p>
+    <button (click)="eliminarCarrera(carrera.codigo)">Eliminar</button>
+  </li>
+</ul>
